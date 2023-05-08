@@ -1,1 +1,0 @@
-# packer-ubuntu2204
