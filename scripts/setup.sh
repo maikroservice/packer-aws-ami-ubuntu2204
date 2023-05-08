@@ -10,9 +10,9 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confd
 sudo apt-get update
 sudo apt-get -y -qq install curl wget git vim apt-transport-https ca-certificates
 
-sudo groupadd -r packer
+sudo groupadd -r automation
 sudo useradd -m -s /bin/bash terraform
-sudo usermod -a -G packer terraform
+sudo usermod -a -G automation terraform
 sudo cp /etc/sudoers /etc/sudoers.orig
 echo "terraform  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/terraform
 
